@@ -23,13 +23,13 @@ rates, they are very similiar.
 This definitely seems to be telling a story. With a neutral objective lead Blue team wins more often. However, what this 
 graph doesnt show is that Red team obtains the first dragon 9.4% more often than Blue. So I think what this says is that Red team has an inate advatage 
 when it comes to taking the first dragon. The games when blue does manage to get the dragon, it is likly that they already had a lead of some kind that 
-enabled them to take the first dragon. Sadly though, I have run out of time and my project is due. I will have to perhaps explore this further.
+enabled them to take the first dragon. This is somthing I would have liked to dig into if I had more time.
   
   
   
   
   
   
-here are 2 bonus graphs I made. I decided to convert them into the scatter plot seen above. 
+Here are 2 bonus graphs I made. I decided to convert them into the scatter plot seen above. 
 ![RedTeam](https://i.imgur.com/qbnFyVL.png){: .mx-auto.d-block :}
 ![RedTeam](https://i.imgur.com/75vjx6B.png){: .mx-auto.d-block :}
