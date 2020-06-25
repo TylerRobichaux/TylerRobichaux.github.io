@@ -26,6 +26,15 @@ In total I added 10 features that I thought could be helpful. I also removed fea
 
 
 
+
+
+
+
+
+
+
+
+
 ![feature importance](https://i.imgur.com/3bNc8Sr.png){: .mx-auto.d-block :}
 
 
