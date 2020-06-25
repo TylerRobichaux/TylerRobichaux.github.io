@@ -7,7 +7,9 @@ In total I added 10 features that I thought could be helpful. I also removed fea
 
   At this point I was curious about my feature importance. I created a feature importance graph. This graph showed that the Blue/RedGoldRatio feature far more important than any other feature. The next 2 features with the most importance were the two columns containing information about if a team had killed the Dragon. I started creating new models each one removing more and more of the features ranked with the least importance. I kept removing features and the validation accuracy wasn't going down an appreciable amount. By the end I had reduced my forty six features to just three. Blue/RedGoldRatio, RedDragons, and blueDragon. The first column, Blue/RedGoldRatio, is simply how much gold the blue team had in total divided by how much gold the red team had in total. The other two columns were simple binary features containing a 1 if that team had killed the dragon and a 0 if they had not. This model had essentially the same validation accuracy with 72.6%. While I wasn't pleased that I had not made my model more accurate. I reduced its complexity greatly while maintaining the same accuracy. With a reduction from 46 features to just 3 features and maintaining the same accuracy. This 3 feature model is a vast improvement.
 
-https://i.imgur.com/qNtcrCK.png
+
+![feature importance](https://i.imgur.com/qNtcrCK.png){: .mx-auto.d-block :}
+
 
   Furthering my quest to make my model more accurate. I decided to make a confusion matrix. I was expecting to see some imbalance between false positives and false negatives. The idea was I could see if my model is worse at predicting victories or defeats. Perhaps I could engineer a more custom feature to help resolve some of the confusion my model was having. My confusion matrix was not at all what I wanted. It showed a near perfect balance in all categories. This greatly hindered my ability to balance a weakness in my model, as my model was already very balanced. So I abandon the idea and moved on.
 
