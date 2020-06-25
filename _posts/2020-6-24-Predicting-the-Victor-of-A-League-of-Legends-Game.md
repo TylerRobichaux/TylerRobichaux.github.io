@@ -20,6 +20,12 @@ In total I added 10 features that I thought could be helpful. I also removed fea
   I created a partial dependence plot for the Blue/RedGoldRatio feature. This plot showed a fairly linear relationship between the blue and Red teams gold ratio and the chance that blue team would win the game. I also created a shaply plot, this plot showed how each of the columns effected a prediction. For the specific game I chose, as expected, the Blue/RedGoldRatio feature had the most influence. the two dragon columns actually had a negative impact on the prediction. While I realize this is just chance due to the game I chose, this combined with the somewhat linear relationship of gold ratio and predicting the winner of the game. I decided to try a Logistic Regression model.
 
 ![feature importance](https://i.imgur.com/ixOMKAy.png){: .mx-auto.d-block :}
+
+
+
+
+
+
 ![feature importance](https://i.imgur.com/3bNc8Sr.png){: .mx-auto.d-block :}
 
 
