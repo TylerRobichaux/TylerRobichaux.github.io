@@ -14,12 +14,12 @@ In total I added 10 features that I thought could be helpful. I also removed fea
   Furthering my quest to make my model more accurate. I decided to make a confusion matrix. I was expecting to see some imbalance between false positives and false negatives. The idea was I could see if my model is worse at predicting victories or defeats. Perhaps I could engineer a more custom feature to help resolve some of the confusion my model was having. My confusion matrix was not at all what I wanted. It showed a near perfect balance in all categories. This greatly hindered my ability to balance a weakness in my model, as my model was already very balanced. So I abandon the idea and moved on.
   
   
-![feature importance](https://i.imgur.com/Q9QntpR.png){: .mx-auto.d-block :}
+![confusion](https://i.imgur.com/Q9QntpR.png)
   
   
   I created a partial dependence plot for the Blue/RedGoldRatio feature. This plot showed a fairly linear relationship between the blue and Red teams gold ratio and the chance that blue team would win the game. I also created a shaply plot, this plot showed how each of the columns effected a prediction. For the specific game I chose, as expected, the Blue/RedGoldRatio feature had the most influence. the two dragon columns actually had a negative impact on the prediction. While I realize this is just chance due to the game I chose, this combined with the somewhat linear relationship of gold ratio and predicting the winner of the game. I decided to try a Logistic Regression model.
 
-![feature importance](https://i.imgur.com/ixOMKAy.png){: .mx-auto.d-block :}
+![PDP](https://i.imgur.com/ixOMKAy.png){: .mx-auto.d-block :}
 
 
 
@@ -35,7 +35,7 @@ ________________________________________________________________________________
 
 
 
-![feature importance](https://i.imgur.com/3bNc8Sr.png){: .mx-auto.d-block :}
+![Shap plot](https://i.imgur.com/3bNc8Sr.png){: .mx-auto.d-block :}
 
 
   I made several Logistic Regression models. All containing varying features. My three most successful models were a model with the Blue/RedGoldRatio, BlueDragons, and RedDragons another with just Blue/RedGoldRatio, and one more with Blue/RedGoldRatio, and Blue/RedExpRatio. Blue/RedExpRatio is a feature that is the Blue teams total experience points gained divided by the Red teams total experience points gained. All three of these models with within ~1.3% of each other. The model with a single feature of Blue/RedGoldRatio being the least accurate with a validation accuracy of 71.93%, and the model with the Blue/RedGoldRatio, BlueDragons, and RedDragons features being the most accurate with a validation accuracy of 73.21%. Finally, an increase in accuracy, while maintaining simplicity. I believe my Logistic Regression model with the Blue/RedGoldRatio, BlueDragons, and RedDragons features to be my best model. I decided to find its testing accuracy. This models testing accuracy was 76.31%. while I was ecstatic to see a jump in accuracy, I was also curious as to why. My split was random. So I thought maybe the testing set happened to get fewer outlier games, thus making it easier to predict. I re-split my data. The new split received ~73.4% for both validation and testing accuracy. This is the model I chose as my final model.
